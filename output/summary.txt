@@ -1,0 +1,24 @@
+
+    --- Scraping Summary ---
+    Total Leads Scraped: 4
+    High Quality Leads (Score >= 8): 4
+    Timestamp: 2026-02-12 07:25:07
+    
+
+    --- Scraping Summary ---
+    Total Leads Scraped: 17
+    High Quality Leads (Score >= 8): 17
+    Timestamp: 2026-02-12 08:24:53
+    
+
+    --- Scraping Summary ---
+    Total Leads Scraped: 1
+    High Quality Leads (Score >= 8): 1
+    Timestamp: 2026-02-12 08:38:34
+    
+
+    --- Scraping Summary ---
+    Total Leads Scraped: 5
+    High Quality Leads (Score >= 8): 5
+    Timestamp: 2026-02-12 08:58:42
+    

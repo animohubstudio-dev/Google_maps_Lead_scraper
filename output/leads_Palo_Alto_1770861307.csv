@@ -1,0 +1,9 @@
+Business Name,Website,Phone,Email,Instagram,Facebook,LinkedIn,WhatsApp,City,State,Rating,Reviews,Quality Score,Notes
+Palo Alto Dental Wellness,http://www.paloaltodentalwellness.com/,"
++1 650-322-7239, ",,https://www.instagram.com/paloaltodentalwellness/?hl=en,https://www.facebook.com/pages/Palo-Alto-Dental-Wellness/117132464998915,,,,,4.3,,8,
+Palo Alto Dental Care,http://www.paloaltodentalcare.com/,"
++1 650-325-2457",,,,,,,,4.3,,10,"Scraping Error: HTTPConnectionPool(host='www.paloaltodentalcare.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPConnection(host='www.paloaltodentalcare.com', port=80): Failed to resolve 'www.paloaltodentalcare.com' ([Errno 11002] getaddrinfo failed)""))"
+Palo Alto Dental Care,http://www.paloaltodentalcare.com/,"
++1 650-325-2457",,,,,,,,4.3,,10,"Scraping Error: HTTPConnectionPool(host='www.paloaltodentalcare.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPConnection(host='www.paloaltodentalcare.com', port=80): Failed to resolve 'www.paloaltodentalcare.com' ([Errno 11002] getaddrinfo failed)""))"
+"Dr. Shachi Bahl, DMD",http://bahldmd.com/,"
++1 650-370-1234",,,,,,,,4.3,,10,Error: 403

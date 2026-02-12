@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps Lead Scraper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="glass-container">
+        <header>
+            <h1>Maps Scraper <span class="badge">Pro</span></h1>
+            <p>Autonomous Lead Generation Agent</p>
+        </header>
+
+        <main>
+            <form id="scrapeForm">
+                <div class="input-group">
+                    <label for="city">Target City</label>
+                    <input type="text" id="city" name="city" placeholder="e.g. San Francisco, CA" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="query">Search Query <span class="optional">(Optional)</span></label>
+                    <input type="text" id="query" name="query" placeholder="e.g. Coffee shops">
+                    <small>Leave blank to use default queries (Dentists, etc.)</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="max_leads">Max Leads: <span id="leadsValue">10</span></label>
+                    <input type="range" id="max_leads" name="max_leads" min="1" max="50" value="10"
+                        oninput="document.getElementById('leadsValue').innerText = this.value">
+                </div>
+
+                <button type="submit" id="scrapeBtn" class="cta-button">
+                    <span class="btn-text">Start Scraping</span>
+                    <span class="spinner hidden"></span>
+                </button>
+            </form>
+
+            <div id="resultsArea" class="results-container hidden">
+                <div class="status-card">
+                    <div class="icon-box success-icon">✓</div>
+                    <h3>Scraping Complete!</h3>
+                    <p id="resultMessage">Found 10 leads.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value" id="totalLeads">0</span>
+                        <span class="stat-label">Total Leads</span>
+                    </div>
+                    <!-- Placeholders for more stats if available -->
+                </div>
+
+                <a href="#" id="downloadLink" class="download-button">Download CSV</a>
+            </div>
+
+            <div id="loadingArea" class="loading-container hidden">
+                <div class="loader"></div>
+                <p>Scraping in progress... Please wait.</p>
+                <small>This process runs in the background. Do not close this tab.</small>
+            </div>
+
+            <div id="errorArea" class="error-container hidden">
+                <div class="icon-box error-icon">!</div>
+                <h3>Error</h3>
+                <p id="errorMessage">Something went wrong.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
