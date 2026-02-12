@@ -1,8 +1,10 @@
-# main.py
+print("Loading main.py...")
 import argparse
 import time
 import config
+print("Importing MapsScraper...")
 from scraper.maps_scraper import MapsScraper
+print("Importing analyze_website...")
 from scraper.website_scraper import analyze_website
 from utils.file_manager import save_to_csv, generate_summary
 

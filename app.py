@@ -1,8 +1,12 @@
+print("Starting app.py...")
 from flask import Flask, render_template, request, jsonify, send_from_directory
 import os
+print("Importing main...")
 import main
+print("Importing config...")
 import config
 
+print("Initializing Flask app...")
 app = Flask(__name__)
 # Ensure output directory exists for downloads
 OUTPUT_DIR = "output"
