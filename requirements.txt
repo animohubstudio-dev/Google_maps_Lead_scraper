@@ -4,3 +4,6 @@ webdriver-manager
 gunicorn
 openpyxl
 flask
+requests
+beautifulsoup4
+lxml
