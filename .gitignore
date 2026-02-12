@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Scraper Output
+output/
+leads_*.csv
+leads_*.json
+summary.txt
+
+# Debug Artifacts
+debug_screenshot.png
+debug_page.html
+debug_*.log
+geckodriver.log
+chromedriver.log
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# OS
+Thumbs.db
